@@ -9,6 +9,7 @@
 /**/.classpath
 /**/.project
 /**/transaction-logs
+target/
 
 ### macOS ###
 # General

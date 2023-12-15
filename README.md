@@ -1,20 +1,5 @@
-# Lab for Wildfly demo java code
+Source code for tutorials on http://www.mastertheboss.com
 
-## Introduction
+The source code is distributed under the MIT license (https://opensource.org/licenses/MIT)
 
-Development for `wildfly-19`
-
-- Wildfly - 19
-- 
-
-
-## Skeleton code 
-
-```shell
-mvn archetype:generate  -DinteractiveMode=false -DarchetypeGroupId=org.wildfly.archetype -DarchetypeArtifactId=wildfly-jakartaee-webapp-archetype -DarchetypeVersion=19.1.0.Final -DgroupId=org.example -DartifactId=wildfly- -Dversion=1.0
-```
-
-# References
-- [Wildfly archetype generator][1]
-
-[1]:https://frankies.gitee.io/blog/arche-tools/index.html
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.

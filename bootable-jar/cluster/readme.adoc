@@ -1,0 +1,3 @@
+== HTTP HA Application using WildFly bootable jar
+
+Article: http://www.mastertheboss.com/javaee/eclipse-microservices/creating-a-clustered-application-with-wildfly-bootable-jar
