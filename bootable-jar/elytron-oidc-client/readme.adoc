@@ -1,3 +1,0 @@
-== Secure WildFly applications with OpenID Connect
-
-Tutorial for this article: http://www.mastertheboss.com/jbossas/jboss-security/secure-wildfly-applications-with-openid-connect/

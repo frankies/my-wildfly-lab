@@ -1,0 +1,5 @@
+== Jakarta EE 10 REST jQuery example
+
+This example shows how to build and test a REST Application using Jakarta EE 10 and jQuery
+
+Read more: https://www.mastertheboss.com/jboss-frameworks/resteasy/consuming-a-restful-service-with-ajax/
