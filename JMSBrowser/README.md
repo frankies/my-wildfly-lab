@@ -25,4 +25,4 @@ Usage: http://localhost:8080/Browser/rest/list?queue=[JNDI_BINDING]
 
 Example:
 
-http://localhost:8080/Browser/rest/list?queue=java:/ExampleQueue
+http://localhost:8080/Browser/rest/list?queue=java:/queue/G1_REPLYER_REQUEST_Q
