@@ -65,6 +65,11 @@ java -jar /workspaces/my-wildfly-lab/bootable-ja
 r/hollow-jar/target/default-hollow-jar-bootable.jar  --deployment=target/rest-demo.war  --install-dir=/tmp/w2
 ```
 
+## 关于wildfly bootable jar 的layers
+
+[WildFly Layers ][layers]
+
+
 ## Brief
 
 Source code for tutorials on http://www.mastertheboss.com
@@ -72,3 +77,6 @@ Source code for tutorials on http://www.mastertheboss.com
 The source code is distributed under the MIT license (https://opensource.org/licenses/MIT)
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+[layers]:https://docs.wildfly.org/29/Bootable_Guide.html#wildfly_layers
