@@ -14,7 +14,7 @@
   <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     <!--https://repository.jboss.org/nexus/content/groups/public/org/wildfly/wildfly-galleon-pack/-->
-    <version.wildfly>30.0.0.Final</version.wildfly>
+    <version.wildfly>27.0.1.Final</version.wildfly>
     <plugin.fork.embedded>true</plugin.fork.embedded> 
         <failOnMissingWebXml>false</failOnMissingWebXml>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
@@ -29,13 +29,13 @@
                 <configuration>
                     <feature-pack-location>wildfly@maven(org.jboss.universe:community-universe)#${version.wildfly}</feature-pack-location>
                     <hollow-jar>true</hollow-jar> 
-                      <layers>
-                        <layer>jaxrs</layer> 
-                        <layer>jaxrs-server</layer>
+                       <layers>
+                        <layer>jaxrs</layer>
+                        <layer>management</layer> 
                     </layers>
-                    <excluded-layers>
+                    <!-- <excluded-layers>
                         <layer>deployment-scanner</layer>
-                    </excluded-layers>
+                    </excluded-layers> -->
 
                     <plugin-options>
                         <jboss-fork-embedded>${plugin.fork.embedded}</jboss-fork-embedded>
