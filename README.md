@@ -12,6 +12,16 @@ curl -JL --output /tmp/src.zip  https://codeload.github.com/fmarchioni/masterthe
   unzip src.zip -d ./wildfly/ && \
   cd - && echo "===>> Has dowload to '/tm/wildfly/'！"
 ```
+
+
+```
+curl -JL --output /tmp/jar-plugin.zip  https://codeload.github.com/wildfly-extras/wildfly-jar-maven-plugin/zip/refs/tags/10.0.0.Final && \
+  cd /tmp/ && \
+  unzip jar-plugin.zip -d ./jar/ && \
+  cd - && echo "===>> Has dowload to '/tm/jar/'！"
+```
+
+
 ## 直接运行
 
 ```shell
@@ -61,14 +71,18 @@ cd /workspaces/my-wildfly-lab/bootable-jar/hollow-jar
 - 运行
 
 ```
-java -jar /workspaces/my-wildfly-lab/bootable-ja
-r/hollow-jar/target/default-hollow-jar-bootable.jar  --deployment=target/rest-demo.war  --install-dir=/tmp/w2
+java -jar /workspaces/my-wildfly-lab/bootable-jar/hollow-jar/target/default-hollow-jar-bootable.jar  --deployment=target/rest-demo.war  --install-dir=/tmp/w2
 ```
 
 ## 关于wildfly bootable jar 的layers
 
 [WildFly Layers ][layers]
 
+## 切换到jdk1.8
+
+```java
+sdk install java 8.0.382-albba   
+```
 
 ## Brief
 

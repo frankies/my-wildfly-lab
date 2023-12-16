@@ -12,10 +12,16 @@ import javax.ws.rs.core.MediaType;
 import java.util.ArrayList;
 import java.util.List;
 
-
 @Path("/tutorial")
 public class SimpleRESTService {
 
+	@GET
+	@Path("hello")
+    @Produces("text/plain")
+    public String doGet() {
+		return "Hello from SimpleRESTService!";
+        // return Response.ok("Hello from SimpleRESTService!").build();
+    }
 
 	@GET
 	@Path("helloname/{name}")
