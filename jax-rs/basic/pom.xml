@@ -17,6 +17,13 @@
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 
+
+		
+    <version.wildfly>27.0.1.Final</version.wildfly>
+    <plugin.fork.embedded>true</plugin.fork.embedded> 
+        <failOnMissingWebXml>false</failOnMissingWebXml> 
+       <version.wildfly.datasources.galleon-pack>6.0.0.Final</version.wildfly.datasources.galleon-pack>
+
 	</properties>
 
 	<dependencies>
@@ -53,6 +60,33 @@
 				<artifactId>wildfly-maven-plugin</artifactId>
 				<version>2.0.1.Final</version>
 			</plugin>
+ 
+            <plugin>
+                <groupId>org.wildfly.plugins</groupId>
+                <artifactId>wildfly-jar-maven-plugin</artifactId>
+                <configuration>
+                    <feature-pack-location>wildfly@maven(org.jboss.universe:community-universe)#${version.wildfly}</feature-pack-location>
+                    <!-- <hollow-jar>true</hollow-jar>  -->
+                       <layers> 
+                        <layer>jaxrs</layer>
+                        <layer>management</layer> 
+                    </layers>
+                    <!-- <excluded-layers>
+                        <layer>deployment-scanner</layer>
+                    </excluded-layers> -->
+
+                    <plugin-options>
+                        <jboss-fork-embedded>${plugin.fork.embedded}</jboss-fork-embedded>
+                    </plugin-options>
+                </configuration>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>package</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin> 
 		</plugins>
 	</build>
 </project>
