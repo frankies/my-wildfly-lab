@@ -1,0 +1,9 @@
+== RESTEasy tutorial for WildFly
+
+Article: http://www.mastertheboss.com/jboss-frameworks/resteasy/resteasy-tutorial
+
+
+
+**从wildfly-10 开始支持 javax-ws 类申明的功能**
+
+[关于JAX-RS Application](https://access.redhat.com/documentation/en-us/jboss_enterprise_application_platform_continuous_delivery/16/html/developing_web_services_applications/developing_jax_rs_web_services#doc-wrapper)
